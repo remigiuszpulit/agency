@@ -1,0 +1,10 @@
+.intro {
+  background: url("../../assets/images/intro-bg.jpg");
+  background-size: cover;
+  background-position: content;
+  background-repeat: no-repeat;
+
+  #{&}__content {
+    min-height: 46rem;
+  }
+}
