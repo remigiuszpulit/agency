@@ -1,0 +1,83 @@
+// .svg-inline--fa {
+//   width: rem(72px);
+//   height: rem(64px);
+
+//   path {
+//     fill: $white;
+//   }
+// }
+
+.close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.mb-100 {
+  margin-bottom: rem(100px);
+}
+
+.bg-map {
+  background-image: url(#{$img-path}map-image.png);
+}
+
+.form-floating > .h-c100 {
+  height: calc(100% - 1rem);
+}
+
+.page-section {
+  padding: 6rem 0 6rem 0;
+}
+
+.title {
+  font-family: "Montserrat Bold", sans-serif;
+  margin-bottom: rem(16px);
+  font-size: rem(40px);
+}
+
+.nav-link {
+  font-family: "Montserrat Regular", sans-serif;
+}
+
+.subtitle {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  font-size: rem(16px);
+  margin-bottom: rem(64px);
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h4,
+button {
+  font-family: "Montserrat Bold", sans-serif;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+
+  font-size: rem(16px);
+}
+
+.hdl-intro {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: rem(72px);
+  line-height: 1;
+  margin-bottom: rem(64px);
+}
+.hdl-sub-intro {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  font-size: rem(36px);
+  margin-bottom: rem(32px);
+}

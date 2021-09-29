@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency_template</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Document</title>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
-            src="./assets/images/navbar-logo.svg"
-            alt="logo"
-            width="188"
+            src="./assets/images/logo.svg"
+            alt="Logo"
+            width="187"
             height="32"
           />
         </a>
@@ -22,14 +23,15 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto py-4 py-lg-0 text-uppercase">
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
@@ -58,21 +60,445 @@
             class="
               col
               d-flex
-              flex-column
+              flex-nowrap flex-column
               justify-content-center
               align-items-center
-              flex-nowrap
               intro__content
             "
           >
-            <h2 class="text-white">Welcome To Our Studio!</h2>
-            <h1 class="text-uppercase text-white">It's nice to meet you</h1>
-            <button type="button" class="btn btn-primary btn-lg text-uppercase">
+            <h2 class="text-white hdl-sub-intro">Welcome To Our Studio!</h2>
+            <h1 class="text-uppercase text-white hdl-intro">It's nice to meet you</h1>
+            <button
+              type="button"
+              class="
+                btn btn-primary
+                py-1-25
+                px-2-25
+                fw-bold
+                btn-lg
+                text-uppercase text-white
+              "
+            >
               Tell me more
             </button>
           </div>
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="container page-section">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="title text-uppercase">Services</h2>
+            <h3 class="subtitle text-muted">Lorem ipsum dolor sit amet.</h3>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <span
+              class="
+                fa-stack fa-4x fa-circle
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">E-Commerce</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam
+              cupiditate cumque, ducimus maiores et?
+            </p>
+          </div>
+
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <span
+              class="
+                fa-stack fa-4x fa-circle
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Responsive Design</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam
+              cupiditate cumque, ducimus maiores et?
+            </p>
+          </div>
+
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <span
+              class="
+                fa-stack fa-4x fa-circle
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Web Security</h4>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam
+              cupiditate cumque, ducimus maiores et?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light page-section">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2 class="title text-uppercase">PORTFOLIO</h2>
+              <h3 class="subtitle text-muted">Lorem ipsum dolor sit amet.</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm mb-4">
+              <div class="portfolio-item">
+                <a
+                  class="portfolio-item__link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio"
+                >
+                  <div class="portfolio-item__hover"></div>
+                  <img
+                    src="./assets/images/portfolio1.jpg"
+                    alt="Portfolio"
+                    class="portfolio-item__img img-fluid"
+                  />
+                </a>
+                <div class="portfolio-item__caption text-center">
+                  <h4 class="portfolio-item__hdl">Threads</h4>
+                  <p class="portfolio-item__content">Illustration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm mb-4">
+              <div class="portfolio-item">
+                <a
+                  class="portfolio-item__link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio"
+                >
+                  <div class="portfolio-item__hover"></div>
+                  <img
+                    src="./assets/images/portfolio2.jpg"
+                    alt="Portfolio"
+                    class="portfolio-item__img img-fluid"
+                  />
+                </a>
+                <div class="portfolio-item__caption text-center">
+                  <h4 class="portfolio-item__hdl">Threads</h4>
+                  <p class="portfolio-item__content">Illustration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm mb-4">
+              <div class="portfolio-item">
+                <a
+                  class="portfolio-item__link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio"
+                >
+                  <div class="portfolio-item__hover"></div>
+                  <img
+                    src="./assets/images/portfolio3.jpg"
+                    alt="Portfolio"
+                    class="portfolio-item__img img-fluid"
+                  />
+                </a>
+                <div class="portfolio-item__caption text-center">
+                  <h4 class="portfolio-item__hdl">Threads</h4>
+                  <p class="portfolio-item__content">Illustration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm mb-4">
+              <div class="portfolio-item">
+                <a
+                  class="portfolio-item__link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio"
+                >
+                  <div class="portfolio-item__hover"></div>
+                  <img
+                    src="./assets/images/portfolio4.jpg"
+                    alt="Portfolio"
+                    class="portfolio-item__img img-fluid"
+                  />
+                </a>
+                <div class="portfolio-item__caption text-center">
+                  <h4 class="portfolio-item__hdl">Threads</h4>
+                  <p class="portfolio-item__content">Illustration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm mb-4">
+              <div class="portfolio-item">
+                <a
+                  class="portfolio-item__link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio"
+                >
+                  <div class="portfolio-item__hover"></div>
+                  <img
+                    src="./assets/images/portfolio5.jpg"
+                    alt="Portfolio"
+                    class="portfolio-item__img img-fluid"
+                  />
+                </a>
+                <div class="portfolio-item__caption text-center">
+                  <h4 class="portfolio-item__hdl">Threads</h4>
+                  <p class="portfolio-item__content">Illustration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm mb-4">
+              <div class="portfolio-item">
+                <a
+                  class="portfolio-item__link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio"
+                >
+                  <div class="portfolio-item__hover"></div>
+                  <img
+                    src="./assets/images/portfolio6.jpg"
+                    alt="Portfolio"
+                    class="portfolio-item__img img-fluid"
+                  />
+                </a>
+                <div class="portfolio-item__caption text-center">
+                  <h4 class="portfolio-item__hdl">Threads</h4>
+                  <p class="portfolio-item__content">Illustration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container page-section">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="title text-uppercase">ABOUT</h2>
+            <h3 class="subtitle text-muted">
+              Lorem ipsum dolor sit amet consectetur.
+            </h3>
+          </div>
+        </div>
+
+        <div class="row mb-100">
+          <div class="col-md-5 text-end">
+            <h4>
+              <span class="d-block">2009-2011 </span>Our Humble Beginnings
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+          <div class="col-md-2">
+            <img
+              src="./assets/images/12.jpg"
+              alt="obrazek"
+              class="rounded-circle img-fluid"
+            />
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row mb-100">
+          <div class="col-md-2 offset-md-5">
+            <img
+              src="./assets/images/13.jpg"
+              alt="obrazek"
+              class="rounded-circle img-fluid"
+            />
+          </div>
+          <div class="col-md-5">
+            <h4><span class="d-block">2009-2011 </span>Our Humble Beginnings</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+        <div class="row mb-100">
+          <div class="col-md-5 text-end">
+            <h4>
+              <span class="d-block">2009-2011 </span>Our Humble Beginnings
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+          <div class="col-md-2">
+            <img
+              src="./assets/images/12.jpg"
+              alt="obrazek"
+              class="rounded-circle img-fluid"
+            />
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row mb-100">
+          <div class="col-md-2 offset-md-5">
+            <img
+              src="./assets/images/13.jpg"
+              alt="obrazek"
+              class="rounded-circle img-fluid"
+            />
+          </div>
+          <div class="col-md-5">
+            <h4><span class="d-block">2009-2011 </span>Our Humble Beginnings</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+        <div class="row mb-100">
+          <div class="col-md-2 offset-md-5">
+            <span>Be part of our story</span>
+          </div>
+      </section>
+      <section class=" bg-map bg-dark page-section">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2 class="title text-white text-uppercase">Contact Us</h2>
+              <h3 class="subtitle text-muted">Lorem ipsum dolor sit amet.</h3>
+            </div>
+          </div>
+          <form action="" method="POST" class="row">
+            <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="yourName" placeholder="Janusz">
+              <label for="yourName">Your Name *</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="example@example.com">
+              <label for="email">Your Email *</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="phone" placeholder="00000000000">
+              <label for="phone">Your Phone *</label>
+            </div>
+          </div>
+            <div class="col-md-6 ">
+              <div class="form-floating mb-3 h-100">
+                <textarea class="form-control h-c100" placeholder="Your message" id="yourMessage"></textarea>
+                <label for="yourMessage">Your Message *</label>
+              </div>
+
+
+
+
+            </div>
+            <div class="col-12 text-center">
+              <button
+              type="submit"
+              class="
+                btn btn-primary
+                py-1-25
+                px-2-25
+                fw-bold
+                btn-lg
+                text-uppercase text-white
+              "
+              disabled
+            >
+              send message
+            </button>
+              
+            </div>
+          </form>
+        </div>
+          
+      </section>
+
+
+    </main>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="portfolio"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-bs-dismiss="modal">
+            <img src="./assets/images/close-icon.svg" alt="Close" />
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="modal-body text-center">
+                  <h2 class="text-uppercase">PROJECT NAME</h2>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <img
+                    src="./assets/images/portfolio1.jpg"
+                    alt="Portfolio"
+                    class="img-fluid d-block mx-auto"
+                  />
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Soluta, alias? Modi autem explicabo iure optio laboriosam!
+                    Dolor maiores deserunt id, porro placeat ipsa vel sint.
+                  </p>
+                  <ul class="list-inline">
+                    <li><strong>Client: </strong>Threads</li>
+                    <li><strong>Category: </strong>Illustration</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="
+                      btn btn-primary
+                      py-1-25
+                      px-2-25
+                      fw-bold
+                      btn-lg
+                      text-uppercase text-white
+                    "
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-times me-1"></i>
+                    Close project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
