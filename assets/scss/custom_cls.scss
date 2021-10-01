@@ -71,13 +71,107 @@ p {
 
 .hdl-intro {
   font-family: "Montserrat Bold", sans-serif;
-  font-size: rem(72px);
+  font-size: rem(52px);
   line-height: 1;
   margin-bottom: rem(64px);
+  @include media-breakpoint-up(md) {
+    font-size: rem(72px);
+  }
 }
 .hdl-sub-intro {
   font-family: "Roboto Slab", serif;
   font-style: italic;
-  font-size: rem(36px);
+  font-size: rem(24px);
   margin-bottom: rem(32px);
+  @include media-breakpoint-up(md) {
+    font-size: rem(36px);
+  }
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.member {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.img-brand {
+  height: 2.75rem;
+}
+
+.t-secondary {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: rem(14.4px);
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+  letter-spacing: 0.0225rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.btn-lg {
+  font-size: rem(18px);
+}
+
+.brand {
+  width: rem(187px);
+  height: rem(32px);
+  @include media-breakpoint-up(lg) {
+    width: rem(187px);
+    height: rem(32px);
+  }
+}
+
+.lh-1-75 {
+  line-height: 1.75;
+}
+.portfolio-item__content {
+  padding: 1.5rem;
+  margin-bottom: 0;
+}
+
+.portfolio-item-hdl {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.portfolio-item {
+  background-color: $white;
+}
+
+.timeline {
+  h4 > span {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  img {
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+
+    height: rem(80px);
+    width: rem(80px);
+    @include media-breakpoint-up(md) {
+      height: rem(100px);
+      width: rem(100px);
+    }
+    @include media-breakpoint-up(lg) {
+      height: rem(150px);
+      width: rem(150px);
+    }
+    @include media-breakpoint-up(xl) {
+      height: rem(170px);
+      width: rem(170px);
+    }
+  }
 }

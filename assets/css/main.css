@@ -17312,16 +17312,118 @@ p {
 
 .hdl-intro {
   font-family: "Montserrat Bold", sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.25rem;
   line-height: 1;
   margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .hdl-intro {
+    font-size: 4.5rem;
+  }
 }
 
 .hdl-sub-intro {
   font-family: "Roboto Slab", serif;
   font-style: italic;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .hdl-sub-intro {
+    font-size: 2.25rem;
+  }
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.member {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.img-brand {
+  height: 2.75rem;
+}
+
+.t-secondary {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 0.9rem;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+  letter-spacing: 0.0225rem;
+}
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  font-size: 1.125rem;
+}
+
+.brand {
+  width: 11.6875rem;
+  height: 2rem;
+}
+@media (min-width: 992px) {
+  .brand {
+    width: 11.6875rem;
+    height: 2rem;
+  }
+}
+
+.lh-1-75 {
+  line-height: 1.75;
+}
+
+.portfolio-item__content {
+  padding: 1.5rem;
+  margin-bottom: 0;
+}
+
+.portfolio-item-hdl {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.portfolio-item {
+  background-color: #fff;
+}
+
+.timeline h4 > span, .timeline .h4 > span {
+  margin-bottom: 0.5rem;
+}
+.timeline p {
+  line-height: 1.75;
+}
+.timeline img {
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  height: 5rem;
+  width: 5rem;
+}
+@media (min-width: 768px) {
+  .timeline img {
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .timeline img {
+    height: 9.375rem;
+    width: 9.375rem;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline img {
+    height: 10.625rem;
+    width: 10.625rem;
+  }
 }
 
 .intro {
@@ -17331,7 +17433,7 @@ p {
   background-position: center center;
 }
 .intro .intro__content {
-  min-height: 46rem;
+  min-height: 40rem;
 }
 
 /*# sourceMappingURL=main.css.map */
